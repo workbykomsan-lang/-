@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080, height=1920">
+<title>Komsan.eg Reel</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;900&family=Tajawal:wght@700;800&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
+:root{--r:#E30613;--y:#FFD400;--w:#FFFFFF;--k:#111111}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fff}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;direction:rtl;font-family:'Tajawal',sans-serif;font-weight:700}
+.sc{position:absolute;inset:0;visibility:hidden}
+.red{background:var(--r);color:var(--w)}.wht{background:var(--w);color:var(--k)}
+.t{position:absolute;left:50px;right:50px;text-align:center;font-family:Cairo;font-weight:900;line-height:1.1}
+.y{color:var(--y)}.en{font-family:Inter;font-weight:900;direction:ltr}
+.abs{position:absolute}.c{left:0;right:0;margin:auto}
+.card{position:absolute;left:90px;right:90px;border-radius:24px;box-shadow:0 14px 40px rgba(0,0,0,.22)}
+.cw{background:#fff;border:4px solid var(--r);color:var(--k)}.cr{background:var(--r);color:#fff}
+.chip{display:inline-flex;align-items:center;gap:16px;background:#fff;color:var(--r);border:4px solid var(--r);border-radius:60px;padding:14px 38px;font:900 54px Inter;direction:ltr;box-shadow:0 10px 26px rgba(0,0,0,.2)}
+.dot{width:34px;height:34px;border-radius:50%;background:var(--y);display:inline-block}
+#logo{position:absolute;top:60px;left:50px;z-index:20;background:#fff;border-radius:60px;padding:6px 34px 10px;font:900 58px Cairo;color:var(--r);direction:ltr;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+#logo i{font-style:normal;color:var(--y);-webkit-text-stroke:2px var(--r)}
+#wm{position:absolute;right:44px;bottom:96px;z-index:20;font:900 34px Cairo;color:var(--r);opacity:.4;direction:ltr}
+#pres{position:absolute;right:40px;bottom:330px;width:300px;height:300px;z-index:15;border-radius:50%;border:8px solid #fff;box-shadow:0 12px 34px rgba(0,0,0,.35);overflow:hidden;transform-origin:100% 100%}
+#subs{position:absolute;left:0;right:0;bottom:150px;height:112px;z-index:18}
+.chunk{position:absolute;top:0;left:50%;display:flex;gap:10px;padding:10px 30px;border-radius:60px;font:900 60px Cairo;white-space:nowrap;visibility:hidden}
+.chunk.onred{background:#fff;color:var(--k);border:5px solid var(--r)}
+.chunk.onwht{background:var(--r);color:#fff;border:5px solid var(--r)}
+.chunk span{padding:0 12px;border-radius:18px;display:inline-block}
+#pbar{position:absolute;left:50px;right:50px;bottom:56px;height:22px;border-radius:12px;background:#fff;border:4px solid var(--r);z-index:20;direction:ltr}
+#pf{height:100%;width:0;background:var(--r);border-radius:8px;position:relative}
+#pd{position:absolute;right:-16px;top:-8px;width:28px;height:28px;border-radius:50%;background:var(--y);border:4px solid var(--r)}
+#sw{position:absolute;inset:0;z-index:30;pointer-events:none;overflow:hidden}
+#sw div{position:absolute;top:0;bottom:0;width:1300px;left:0;transform:translateX(1400px)}
+.big{font:900 130px Inter;direction:ltr;text-align:center}
+.tile{width:230px;height:230px;border-radius:28px;display:flex;align-items:center;justify-content:center;font:900 100px Inter;background:#fff;border:6px solid var(--r);color:var(--r);position:relative;direction:ltr}
+.x{position:absolute;left:-20px;right:-20px;top:50%;height:20px;margin-top:-10px;background:var(--y);border:4px solid var(--r);border-radius:10px;transform:rotate(-30deg);transform-origin:0 50%}
+.row{height:230px;display:flex;align-items:center;justify-content:center;gap:30px;padding:0 40px;font:900 56px Inter;direction:ltr}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="komsan-reel" data-start="0" data-duration="69.32" data-width="1080" data-height="1920">
+<audio id="vo" src="voiceover.wav" data-start="0" data-duration="69.32" data-track-index="0" data-volume="1"></audio>
+
+<!-- 1 HOOK -->
+<div class="sc red" id="s0">
+  <div class="t" style="top:330px;font-size:112px"><span class="w">مش لازم</span> <span class="w">تدفع</span> <span class="w y" id="k20">20</span> <span class="w">دولار</span></div>
+</div>
+<!-- 2 PROBLEM -->
+<div class="sc wht" id="s1">
+  <div class="card cr" id="p1" style="top:330px;height:360px;display:flex;align-items:center;justify-content:center"><div class="big" style="font-size:150px;position:relative">$20/month<div class="x" id="pxl" style="left:-30px;right:-30px;transform:rotate(-8deg)"></div></div></div>
+  <div class="abs c" style="top:820px;width:830px;display:flex;justify-content:space-between;direction:ltr">
+    <div class="tile pi">&lt;/&gt;<div class="x"></div></div><div class="tile pi">{ }<div class="x"></div></div><div class="tile pi">&gt;_<div class="x"></div></div>
+  </div>
+</div>
+<!-- 3 SOLUTION -->
+<div class="sc red" id="s2">
+  <div class="abs c" id="alogo" style="top:250px;width:300px;height:300px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center"><div style="width:150px;height:150px;background:var(--y);clip-path:polygon(50% 0,100% 100%,50% 72%,0 100%);border:0"></div></div>
+  <div class="t en" id="aname" style="top:600px;font-size:120px">Antigravity</div>
+  <div class="t y" id="afree" style="top:780px;font-size:84px">مجاني - رسمي من Google</div>
+  <div class="abs c" style="top:1000px;width:900px;display:flex;justify-content:center;gap:22px;flex-wrap:wrap"><span class="chip os"><i class="dot"></i>Windows</span><span class="chip os"><i class="dot"></i>Mac</span><span class="chip os"><i class="dot"></i>Linux</span></div>
+</div>
+<!-- 4 STEP 1 -->
+<div class="sc wht" id="s3">
+  <div class="card cw" id="win" style="top:240px;height:470px;overflow:hidden;border-width:6px;direction:ltr">
+    <div style="background:var(--r);height:100px;display:flex;align-items:center;gap:16px;padding:0 30px;color:#fff;font:900 40px Inter"><i class="dot" style="width:24px;height:24px"></i><i class="dot" style="width:24px;height:24px"></i><i class="dot" style="width:24px;height:24px"></i><span style="margin-left:20px">Komsan.eg | Antigravity</span></div>
+    <div id="typ" style="padding:50px 40px;font:700 54px Inter;color:var(--k)"></div>
+  </div>
+  <div class="abs c" style="top:810px;width:940px;display:grid;grid-template-columns:1fr 1fr;gap:34px;justify-items:center;direction:ltr">
+    <span class="chip ck"><i class="dot"></i>FFmpeg</span><span class="chip ck"><i class="dot"></i>Node.js</span><span class="chip ck"><i class="dot"></i>HyperFrames</span><span class="chip ck"><i class="dot"></i>Git</span>
+  </div>
+</div>
+<!-- 5 STEP 2 -->
+<div class="sc wht" id="s4">
+  <div class="card cw" id="brand" style="top:230px;height:1000px;border-width:6px">
+    <div class="t" style="top:50px;font-size:96px;color:var(--r)" id="bn">Komsan<span class="y" style="-webkit-text-stroke:3px var(--r)">.</span>eg</div>
+    <div class="abs c" style="top:260px;width:720px;display:flex;justify-content:space-between;direction:ltr">
+      <div class="sw" style="text-align:center;font:900 34px Inter"><div style="width:190px;height:190px;border-radius:50%;background:#E30613;margin-bottom:12px"></div>#E30613</div>
+      <div class="sw" style="text-align:center;font:900 34px Inter"><div style="width:190px;height:190px;border-radius:50%;background:#FFD400;margin-bottom:12px"></div>#FFD400</div>
+      <div class="sw" style="text-align:center;font:900 34px Inter"><div style="width:190px;height:190px;border-radius:50%;background:#fff;border:6px solid var(--r);margin-bottom:12px"></div>#FFFFFF</div>
+    </div>
+    <div class="abs c fo" style="top:600px;width:800px;text-align:center;font:900 100px Cairo;color:var(--r)">Cairo <span style="font-family:Tajawal;color:var(--k)">Tajawal</span></div>
+    <div class="abs c fo" style="top:760px;width:800px;text-align:center;font:900 70px Inter;color:var(--k)">Inter</div>
+    <div class="abs c" id="saved" style="top:880px;width:100px;height:100px;border-radius:50%;background:var(--y);border:6px solid var(--r);display:flex;align-items:center;justify-content:center;font:900 60px Inter;color:var(--r)">✓</div>
+  </div>
+</div>
+<!-- 6 STEP 3 -->
+<div class="sc wht" id="s5">
+  <div class="card cw r6" style="top:200px;height:230px"><div class="row" id="r1"><div style="background:var(--r);color:#fff;padding:14px 34px;border-radius:16px">MP4</div><div style="flex:1;height:30px;border-radius:15px;background:#eee;border:4px solid var(--r);overflow:hidden"><div id="up" style="height:100%;width:0;background:var(--y)"></div></div><span style="color:var(--r);font-size:80px" id="ua">↑</span></div></div>
+  <div class="card cw r6" style="top:470px;height:230px"><div class="row" id="wv" style="gap:8px"></div></div>
+  <div class="card cw r6" style="top:740px;height:230px"><div class="row" id="sb" style="direction:rtl"><span class="sp" style="width:200px;height:70px;border-radius:18px;background:var(--r)"></span><span class="sp" style="width:300px;height:70px;border-radius:18px;background:var(--r)"></span><span class="sp" style="width:160px;height:70px;border-radius:18px;background:var(--r)"></span></div></div>
+  <div class="card cw r6" style="top:1010px;height:230px"><div class="row"><div style="flex:1;height:44px;border-radius:22px;background:#eee;border:4px solid var(--r);overflow:hidden"><div id="rf" style="height:100%;width:0;background:var(--r)"></div></div><span id="rp" style="color:var(--r);width:190px">0%</span></div></div>
+</div>
+<!-- 7 CTA -->
+<div class="sc red" id="s6">
+  <div class="card cw" id="cl" style="top:260px;height:420px;display:flex;align-items:center;justify-content:center;flex-direction:column"><div style="font:900 150px Cairo;color:var(--r);direction:ltr;line-height:1.1">Komsan<span style="color:var(--y);-webkit-text-stroke:4px var(--r)">.</span>eg</div><div id="ul" style="width:620px;height:22px;border-radius:11px;background:var(--y);border:4px solid var(--r);margin-top:6px;transform-origin:0 50%"></div></div>
+  <div class="t" id="c1" style="top:780px;font-size:100px">اكتب مونتاج في الكومنتات</div>
+  <div class="t y" id="c2" style="top:1000px;font-size:92px">تابع Komsan.eg</div>
+  <svg id="save" class="abs c" style="top:1130px;width:130px;height:160px" viewBox="0 0 100 120"><path d="M12 6h76v108L50 84 12 114z" fill="#FFD400" stroke="#fff" stroke-width="6" stroke-linejoin="round"/></svg>
+</div>
+
+<!-- persistent layer -->
+<div id="logo">Komsan<i>.</i>eg</div>
+<div id="wm">Komsan.eg</div>
+<div id="pres"><svg viewBox="0 0 200 200" width="100%" height="100%"><rect width="200" height="200" fill="#FFD400"/>
+<path d="M10 200Q22 140 100 134Q178 140 190 200Z" fill="#E30613"/><path d="M78 136L100 164L122 136Z" fill="#fff"/><rect x="88" y="112" width="24" height="28" fill="#E8B48A"/>
+<ellipse cx="100" cy="84" rx="38" ry="44" fill="#F0BE95"/><path d="M60 78Q60 36 100 38Q140 36 140 78Q126 56 100 58Q74 56 60 78Z" fill="#111"/>
+<g id="eyes"><circle cx="86" cy="86" r="5" fill="#111"/><circle cx="114" cy="86" r="5" fill="#111"/></g><path d="M78 72Q86 66 94 72M106 72Q114 66 122 72" stroke="#111" stroke-width="3" fill="none"/>
+<ellipse id="mouth" cx="100" cy="114" rx="9" ry="7" fill="#111"/>
+<g id="hand"><rect x="150" y="150" width="18" height="50" rx="9" fill="#E30613"/><circle cx="159" cy="140" r="16" fill="#F0BE95"/></g></svg></div>
+<div id="subs"></div>
+<div id="pbar"><div id="pf"><div id="pd"></div></div></div>
+<div id="sw"><div style="background:#FFD400"></div><div style="background:#E30613"></div></div>
+</div>
+
+<script>
+/* ===== EDIT HERE ===== */
+// Paste the exact Egyptian-Arabic transcript of the voiceover between the backticks.
+// Words are timed automatically across the real speech segments of the audio (pauses skipped).
+const TRANSCRIPT = ``;
+/* ====================== */
+const D=69.32;
+const S=[0,4.65,15.08,22.83,34.5,46.13,65.55,D];            // scene cuts, snapped to real pauses in the audio
+const RED=[0,2,6];                                          // red scenes (subtitle pill colours)
+const SEG=[[.24,4.46],[4.84,5.52],[6.12,10.76],[11.3,11.72],[12.02,14.84],[15.32,17.26],[17.5,19.08],[19.36,20.48],[21.04,22.68],[22.98,24.42],[24.84,27.12],[27.58,31.92],[32.74,34.3],[34.7,35.98],[36.36,39.62],[39.96,42.48],[43.16,43.78],[44.02,45.9],[46.36,50.4],[50.84,52.48],[52.7,54.14],[54.78,55.84],[56.18,58.94],[59.16,60.04],[60.44,62],[62.86,65.4],[65.7,66.66],[66.92,67.5],[67.78,68.9]];
+const Q=s=>document.querySelector(s),QA=s=>[...document.querySelectorAll(s)];
+const tl=gsap.timeline({paused:true,defaults:{overwrite:false}});
+const pop=(s,t,o={})=>tl.from(s,{y:70,scale:.6,autoAlpha:0,duration:.35,ease:'back.out(1.7)',transformOrigin:'50% 50%',...o},t);
+const kw=(s,t)=>{tl.fromTo(s,{scale:1},{scale:1.2,duration:.14,yoyo:true,repeat:1,ease:'power2.out'},t)
+ .fromTo(s,{x:0},{x:7,duration:.04,yoyo:true,repeat:5},t)
+ .fromTo(s,{filter:'drop-shadow(0 0 0 #FFD400)'},{filter:'drop-shadow(0 0 34px #FFD400)',duration:.2,yoyo:true,repeat:1},t);};
+gsap.set('#root',{autoAlpha:1});
+
+/* scenes + transitions (red/yellow swipe, blur + slide-left) */
+S.slice(0,7).forEach((a,i)=>{
+  const b=S[i+1];
+  tl.set('#s'+i,{visibility:'visible'},a).set('#s'+i,{visibility:'hidden'},b);
+  if(i<6){
+    tl.to('#s'+i,{x:-140,filter:'blur(10px)',duration:.2,ease:'power2.in'},b-.2).set('#s'+i,{x:0,filter:'none'},b);
+    tl.fromTo('#sw div:nth-child(1)',{x:1400},{x:-1400,duration:.4,ease:'power2.inOut'},b-.2)
+      .fromTo('#sw div:nth-child(2)',{x:1400},{x:-1400,duration:.4,ease:'power2.inOut'},b-.14);
+  }
+});
+tl.from('#logo',{y:-120,duration:.4,ease:'back.out(1.7)'},0).from('#wm',{autoAlpha:0,duration:.4},.4);
+tl.fromTo('#pf',{width:'0%'},{width:'100%',duration:D,ease:'none'},0);
+
+/* presenter: shocked + big in hook, then corner; mouth moves only while speaking; gestures on each phrase */
+tl.fromTo('#pres',{scale:2.45,y:-90},{scale:2.45,y:-90,duration:S[1]-.2},0).to('#pres',{scale:1,y:0,duration:.45,ease:'back.out(1.4)'},S[1]-.2);
+tl.fromTo('#mouth',{scale:1.9},{scale:1.9,transformOrigin:'50% 50%',duration:S[1]},0).set('#mouth',{scale:1},S[1]);
+tl.to('#eyes',{scale:1.5,transformOrigin:'50% 50%',duration:.2},.1).to('#eyes',{scale:1,duration:.2},S[1]);
+SEG.forEach(([a,b],i)=>{
+  if(a>S[1]) tl.fromTo('#mouth',{scaleY:1},{scaleY:.25,transformOrigin:'50% 50%',duration:.13,yoyo:true,repeat:Math.max(1,Math.floor((b-a)/.13)-1),ease:'none'},a);
+  tl.fromTo('#hand',{rotation:0},{rotation:-26,svgOrigin:'159 200',duration:.28,yoyo:true,repeat:3,ease:'sine.inOut'},a);
+});
+
+/* S1 HOOK */
+pop('#s0 .w',.25,{stagger:.2}); kw('#k20',1.4);
+/* S2 PROBLEM */
+let t=S[1]; pop('#p1',t+.3); tl.fromTo('#pxl',{scaleX:0},{scaleX:1,duration:.3,transformOrigin:'0 50%',ease:'power3.out'},t+2.4); kw('#p1',t+2.4);
+QA('.pi').forEach((e,i)=>{pop(e,t+4+i*1.2); tl.fromTo(e.querySelector('.x'),{scaleX:0},{scaleX:1,duration:.25,ease:'power3.out'},t+4.7+i*1.2);});
+/* S3 SOLUTION */
+t=S[2]; tl.from('#alogo',{scale:0,rotation:-180,duration:.6,ease:'back.out(1.7)'},t+.2); pop('#aname',t+1); pop('#afree',t+2); kw('#afree',t+2.4);
+pop('.os',t+3.6,{stagger:.5});
+/* S4 STEP 1 */
+t=S[3]; pop('#win',t+.2);
+const str='> npm i hyperframes',o={n:0}; tl.to(o,{n:str.length,duration:1.8,ease:'none',onUpdate(){Q('#typ').textContent=str.slice(0,Math.round(o.n))}},t+1);
+tl.set('#typ',{textContent:''},t);
+pop('.ck',t+3.4,{stagger:1.6}); 
+/* S5 STEP 2 */
+t=S[4]; pop('#brand',t+.2); pop('#bn',t+.7); pop('.sw',t+1.6,{stagger:.9}); kw('#brand .sw:nth-child(1) div',t+1.9);
+pop('.fo',t+5,{stagger:1}); tl.from('#saved',{scale:0,rotation:-90,duration:.5,ease:'back.out(2)'},t+8); kw('#saved',t+8.4);
+/* S6 STEP 3 */
+t=S[5]; const R=QA('.r6'); R.forEach((e,i)=>pop(e,t+.3+i*4.6));
+tl.fromTo('#up',{width:'0%'},{width:'100%',duration:2.6,ease:'power1.inOut'},t+.9).fromTo('#ua',{y:30},{y:-20,duration:.4,yoyo:true,repeat:5},t+.9);
+const wv=Q('#wv'); for(let i=0;i<30;i++){const sil=(i>8&&i<14)||(i>20&&i<25),h=sil?10:40+Math.abs(Math.sin(i*1.7))*130;wv.insertAdjacentHTML('beforeend',`<i class="${sil?'sl':'ac'}" style="display:block;width:20px;height:${h}px;border-radius:10px;background:${sil?'#FFD400':'#E30613'}"></i>`);}
+tl.from('#wv i',{scaleY:0,duration:.3,stagger:.03},t+5.1).to('#wv .sl',{width:0,marginLeft:-8,autoAlpha:0,duration:.5,stagger:.1,ease:'power2.in'},t+7.2);
+tl.fromTo('.sp',{backgroundColor:'#E30613'},{backgroundColor:'#FFD400',duration:.2,stagger:{each:.7,yoyo:false}},t+10).from('.sp',{scale:.4,autoAlpha:0,duration:.3,stagger:.7},t+9.8);
+const rp={n:0}; tl.fromTo('#rf',{width:'0%'},{width:'100%',duration:3.6,ease:'none'},t+14.7).to(rp,{n:100,duration:3.6,ease:'none',onUpdate(){Q('#rp').textContent=Math.round(rp.n)+'%'}},t+14.7);
+/* S7 CTA */
+t=S[6]; pop('#cl',t+.1); tl.from('#ul',{scaleX:0,duration:.5,ease:'power3.out'},t+.6); pop('#c1',t+1); pop('#c2',t+1.8); kw('#c2',t+2);
+tl.from('#save',{scale:0,duration:.4,ease:'back.out(2)'},t+2.4).to('#save',{scale:1.25,duration:.3,yoyo:true,repeat:3,ease:'sine.inOut',transformOrigin:'50% 50%'},t+2.9);
+
+/* kinetic subtitles (3 words per chunk, current word = yellow pop) */
+(function(){
+  const words=TRANSCRIPT.trim()?TRANSCRIPT.trim().split(/\s+/):[]; if(!words.length) return;
+  const sp=SEG.reduce((a,s)=>a+s[1]-s[0],0),wt=words.map(w=>w.length+1),tw=wt.reduce((a,b)=>a+b,0);
+  const at=u=>{for(const s of SEG){const d=s[1]-s[0];if(u<=d)return s[0]+u;u-=d;}return D;};
+  let c=0;const tm=words.map((w,i)=>{const a=at(c/tw*sp);c+=wt[i];return[a,at(c/tw*sp)];});
+  for(let i=0;i<words.length;i+=3){
+    const g=words.slice(i,i+3),a=tm[i][0],b=Math.min(i+3<words.length?tm[i+3][0]:D,tm[Math.min(i+2,words.length-1)][1]+.15);
+    const sc=S.findIndex((v,k)=>a>=v&&a<S[k+1]);
+    const el=document.createElement('div');el.className='chunk '+(RED.includes(sc)?'onred':'onwht');
+    el.innerHTML=g.map(w=>`<span>${w}</span>`).join('');Q('#subs').appendChild(el);
+    gsap.set(el,{xPercent:-50});
+    tl.fromTo(el,{autoAlpha:0,y:40,scale:.7},{autoAlpha:1,y:0,scale:1,duration:.25,ease:'back.out(1.7)'},a).set(el,{autoAlpha:0},b);
+    [...el.children].forEach((sp_,j)=>{const [wa,wb]=tm[i+j];
+      tl.to(sp_,{backgroundColor:'#FFD400',color:'#111',scale:1.15,duration:.12,ease:'back.out(2)'},wa).to(sp_,{backgroundColor:'rgba(255,212,0,0)',color:RED.includes(sc)?'#111':'#fff',scale:1,duration:.1},Math.max(wb,wa+.15));});
+  }
+})();
+
+window.__timelines=window.__timelines||{};
+window.__timelines['komsan-reel']=tl;
+</script>
+</body>
+</html>
